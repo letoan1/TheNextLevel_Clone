@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/randomsale.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Font 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,100&display=swap" rel="stylesheet">
+
+    <!-- Font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,100&family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon -->
+    <title>Style Shop</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="header__search">
+            <form action="#">
+                <input type="search" placeholder="Tìm kiếm sản phẩm...">
+
+            </form>
+        </div>
+        <div class="header__info">
+            <div class="user">
+                <div class="header__info--user">
+                    <div class="user--img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user__log">
+                        <a href="sign-up.html">Đăng nhập</a><br>
+                        <a style='font-size: 14px' href="sign-up.html">Đăng ký</a>
+                    </div>
+                </div>
+                <div class="header__info--cart">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Giỏ hàng</span>
+                        <span class='count__items'>0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li class='has-subnav'>
+                <a href="#">Sản phẩm <i style='padding-left: 5px' class="fas fa-chevron-down"></i></a>
+                <ul class='subnav'>
+                    <li><a href="#">T-Shirt</a></li>
+                    <li><a href="#">Áo dài tay</a></li>
+                    <li><a href="#">Hoodie</a></li>
+                    <li><a href="#">Sweater</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Bộ sưu tập</a></li>
+            <li>
+                <a href="randomsale.html">
+                    <img class='thunder' src="./img/icon_menu_flashsale.png" alt=""> RANDOM SALE
+                </a>
+            </li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <section id="viewall">
+        <div class="viewall__row">
+            <aside>
+                <div class="aside__title">
+                    <h2>Mức giá</h2>
+                    <ul>
+                        <li>
+                            <label for="#">
+                            <input type="checkbox">Giá dưới 100,000đ
+                        </label>
+                        </li>
+                        <li>
+                            <label for="#">
+                            <input type="checkbox">100,000đ - 200,000đ
+                        </label>
+                        </li>
+                        <li>
+                            <label for="#">
+                            <input type="checkbox">200,000đ - 300,000đ
+                        </label>
+                        </li>
+                        <li>
+                            <label for="#">
+                            <input type="checkbox">300,000đ - 500,000đ
+                        </label>
+                        </li>
+                        <li>
+                            <label for="#">
+                            <input type="checkbox">500,000đ - 1,000,000đ
+                        </label>
+                        </li>
+                        <li>
+                            <label for="#">
+                            <input type="checkbox">Giá trên 1,000,000đ
+                        </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="other__product">
+                    <h3>Có thể bạn quan tâm</h3>
+
+                    <!-- Item 1 -->
+
+                    <div class="other__product--item">
+                        <a href="details.html">
+                            <div class="pro__img">
+                                <img src="./img/np4.jpg" alt="">
+                            </div>
+                            <div class="pro__info">
+                                <h3>Áo thun Disconnect</h3>
+                                <span>220,000đ</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 2 -->
+
+                    <div class="other__product--item">
+                        <a href="details.html">
+                            <div class="pro__img">
+                                <img src="./img/np4.jpg" alt="">
+                            </div>
+                            <div class="pro__info">
+                                <h3>Áo thun Disconnect</h3>
+                                <span>220,000đ</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 3 -->
+
+                    <div class="other__product--item">
+                        <a href="details.html">
+                            <div class="pro__img">
+                                <img src="./img/np4.jpg" alt="">
+                            </div>
+                            <div class="pro__info">
+                                <h3>Áo thun Disconnect</h3>
+                                <span>220,000đ</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 4 -->
+
+                    <div class="other__product--item">
+                        <a href="details.html">
+                            <div class="pro__img">
+                                <img src="./img/np4.jpg" alt="">
+                            </div>
+                            <div class="pro__info">
+                                <h3>Áo thun Disconnect</h3>
+                                <span>220,000đ</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Item 5 -->
+
+                    <div class="other__product--item">
+                        <a href="details.html">
+                            <div class="pro__img">
+                                <img src="./img/np4.jpg" alt="">
+                            </div>
+                            <div class="pro__info">
+                                <h3>Áo thun Disconnect</h3>
+                                <span>220,000đ</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <div class="viewall__section">
+                <h1>Style Shop - Random Sales</h1>
+                <ul>
+                    <li>Sắp xếp:</li>
+                    <li>Tên A - Z</li>
+                    <li>Tên Z - A</li>
+                    <li>Giá tăng dần</li>
+                    <li>Giá giảm dần</li>
+                    <li>Hàng mới</li>
+                </ul>
+                <div class="list__products">
+                    <!-- Item 1 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np1.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np2.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np3.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 9-->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 10 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 11 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Item 12 -->
+
+                    <div class="product__item">
+                        <div class="product__img">
+                            <a href="details.html">
+                                <!-- Khung viền Random Sale -->
+                                <img class="random__img" src="./img/frame_2.png" alt="">
+                                <img src="./img/np4.jpg" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-eye"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product__info">
+                            <a href="details.html">
+                                <h3>Áo thun Burn It All Down</h3>
+                                <span class='price'>250,000đ</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="top__footer">
+            <h2>Đăng ký nhận tin</h2>
+            <form action="#">
+                <input type="email" placeholder="Nhập địa chỉ email">
+                <input type="submit" value="Đăng ký">
+            </form>
+        </div>
+
+        <div class="main__footer">
+            <div class="about__us">
+                <h3>Về chúng tôi</h3>
+                <p>Style Shop - Sự lựa chọn của mọi người</p>
+                <ul>
+                    <li><a href="#">Địa chỉ: 147 Nguyễn Thị Thập, Liên Chiểu, Đà Nẵng</a></li>
+                    <li><a href="#">Số điện thoại: 0123456789</a></li>
+                    <li><a href="#">Email: styleshop@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="policy">
+                <h2>Chính sách</h2>
+                <li><a>Chính sách đổi trả</a></li>
+                <li><a>Chính sách bán hàng</a></li>
+                <li><a>Chính sách bảo mật</a></li>
+                <li><a>Điều khoản dịch vụ</a></li>
+            </div>
+
+            <div class="infomation">
+                <h2>Thông tin</h2>
+                <li><a>Hướng dẫn chọn size</a></li>
+                <li><a>Hướng dẫn bảo quản</a></li>
+            </div>
+
+            <div class="social__icon">
+                <h3>Theo dõi chúng tôi</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src='./js/swiper.js'></script>
+    <script src='./js/showsubmenu.js'></script>
+</body>
+
+</html>

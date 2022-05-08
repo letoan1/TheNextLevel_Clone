@@ -1,0 +1,132 @@
+@import './style.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    border-top-left-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #019abd;
+}
+
+.about__cart {
+    background: #f8f8f8;
+    padding-top: 40px;
+}
+
+.cart {
+    max-width: 1240px;
+    margin: 0 auto;
+    color: #3a445e;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    background: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    align-items: center;
+}
+
+.cart__info {
+    border-right: 1px solid #ddd;
+    margin-right: 40px;
+}
+
+.cart__info h1 {
+    margin-bottom: 40px;
+}
+
+.cart__item {
+    border-bottom: 1px solid #ddd;
+    max-width: 90%;
+}
+
+.cart__item:last-child {
+    border-bottom: none !important;
+}
+
+.cart__details {
+    display: grid;
+    grid-template-columns: 30px 100px 350px 300px;
+    grid-gap: 10px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cart__details a {
+    text-decoration: none;
+    color: #ddd;
+    transition: all 0.1s;
+}
+
+.cart__details a:hover {
+    color: #f32;
+}
+
+.cart__img img {
+    width: 100px;
+    height: 100px;
+}
+
+.cart__price span {
+    color: #f32;
+    margin-right: 20px;
+}
+
+.cart__price input[type="text"] {
+    max-width: 20%;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.cart__price .remove {
+    padding: 5px 10px;
+    margin-right: -5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.cart__price .add {
+    padding: 5px 10px;
+    margin-left: -5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.title__cart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding-right: 50px;
+}
+
+.btn--cart {
+    padding: 15px 20px;
+    background: #ff5723;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 85%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.cart__checkout .continue {
+    text-decoration: none;
+    margin-left: 20%;
+    color: #6c757d;
+}
+
+.cart__checkout .fas {
+    margin-right: 10px;
+}

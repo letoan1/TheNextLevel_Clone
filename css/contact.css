@@ -1,0 +1,109 @@
+@import '../css/checkout.css';
+#navigation {
+    margin-bottom: 0;
+}
+
+.form__contact {
+    color: #3a445e;
+    padding-top: 20px;
+    background: #f8f8f8;
+}
+
+.form__info {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 16px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.form__info h1,
+.form__info h3 {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.form__info ul {
+    border-bottom: 1px solid #ddd;
+    width: 50%;
+}
+
+.form__info ul li {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.form__info ul li a {
+    text-decoration: none;
+    color: #3a445e;
+}
+
+.form__info ul li a .fas,
+.form__info ul li a .far {
+    width: 30px;
+    color: #019abd;
+    padding-right: 10px;
+}
+
+.form__info ul li a span:hover {
+    color: #019abd
+}
+
+#form__control {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+#form__control>input[type="text"],
+#form__control input[type="email"],
+#form__control textarea {
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+
+#form__control input[type="text"]:focus,
+#form__control input[type="text"]:active,
+#form__control input[type="email"]:focus,
+#form__control input[type="email"]:active,
+#form__control textarea:focus,
+#form__control textarea:active {
+    border: 1px solid #019abd;
+}
+
+.form__footer input[type="email"] {
+    width: 500px;
+    padding: 10px;
+    border: none;
+}
+
+.form__footer>input[type="email"]:focus,
+.form__footer>input[type="email"]:active {
+    outline: none;
+}
+
+#form__control>.btn--contact {
+    padding: 12px;
+    border-radius: 5px;
+    color: #000;
+    background: #ffc107;
+    border: none;
+}
+
+.btn--contact:hover {
+    background: #fdd835;
+}
+
+.form__footer>input[type="submit"] {
+    padding: 10px;
+    background: #ffc107;
+    border: none;
+    margin-left: -15px;
+    cursor: pointer;
+}

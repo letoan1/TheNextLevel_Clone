@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Font 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,100&display=swap" rel="stylesheet">
+
+    <!-- Font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,100&family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon -->
+    <title>Style Shop - Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="header__search">
+            <form action="#">
+                <input type="search" placeholder="Tìm kiếm sản phẩm...">
+            </form>
+        </div>
+        <div class="header__info">
+            <div class="user">
+                <div class="header__info--user">
+                    <div class="user--img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user__log">
+                        <a href="sign-up.html">Đăng nhập</a><br>
+                        <a style='font-size: 14px' href="sign-up.html">Đăng ký</a>
+                    </div>
+                </div>
+                <div class="header__info--cart">
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Giỏ hàng</span>
+                        <span class='count__items'>0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li class='has-subnav'>
+                <a href="#">Sản phẩm <i style='padding-left: 5px' class="fas fa-chevron-down"></i></a>
+                <ul class='subnav'>
+                    <li><a href="#">T-Shirt</a></li>
+                    <li><a href="#">Áo dài tay</a></li>
+                    <li><a href="#">Hoodie</a></li>
+                    <li><a href="#">Sweater</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Bộ sưu tập</a></li>
+            <li>
+                <a href="randomsale.html">
+                    <img class='thunder' src="./img/icon_menu_flashsale.png" alt=""> RANDOM SALE
+                </a>
+            </li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <section id="details">
+        <div class="details__product">
+            <div class="details__product--img">
+                <img src="./img/np1.jpg" alt="">
+            </div>
+
+            <div class="details__product--info">
+                <h2 class="title__product">
+                    Áo thun Arcane
+                </h2>
+
+                <div class="status__product">
+                    Tình trạng: <span>Còn hàng</span>
+                </div>
+
+                <div class="price__product">
+                    <h1>250,000đ</h1>
+                </div>
+
+                <div class="form__product">
+                    <div class="size__product">
+                        <p>Kích thước: </p>
+                        <div class="size__select">
+                            <div class="size">S</div>
+                            <div class="size">M</div>
+                            <div class="size">L</div>
+                            <div class="size">XL</div>
+                            <div class="size">XXL</div>
+                        </div>
+                    </div>
+
+                    <div class="color__product">
+                        <p>Màu sắc: </p>
+                        <div class="color__select">
+                            <div class="color" style="background:#000 ;"></div>
+                            <div class="color" style="background: #fff ;"></div>
+                            <div class="color" style="background: #e83e8c;"></div>
+                            <div class="color" style="background: #17a2b8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="quantity">
+                        <p>Số lượng:</p>
+                        <div class="quantity__select">
+                            <input type="number" value="1">
+                        </div>
+                    </div>
+
+                    <div class="addtocart">
+                        <a href="checkout.html">
+                            <input type="submit" value="THÊM VÀO GIỎ HÀNG">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="description">
+        <div class="row">
+            <div class="desc__product">
+                <h2>Mô tả sản phẩm</h2>
+                <p>Cùng Style Shop đến với tựa game thứ 12 trong series Assassin's Creed, lấy chủ đề về các chiến binh Viking.</p>
+                <p>
+                    <strong>Chi tiết sản phẩm:</strong>
+                    <ul>
+                        <li>Sản phẩm 100% cotton - định lượng 210gsm.</li>
+                        <li>Form áo cơ bản.</li>
+                        <li>Hình được in ở ngực áo với công nghệ in kỹ thuật số.</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Quy định về đổi sản phẩm:</strong>
+                    <ul>
+                        <li>Chỉ được đổi sản phẩm duy nhất một lần.</li>
+                        <li>Thời hạn đổi sản phẩm là 7 ngày, kể từ khi nhận hàng..</li>
+                        <li>Sản phẩm đổi phải kèm nguyên hộp, nhãn mác.</li>
+                        <li>Sản phẩm đổi không có dấu hiệu đã qua sử dụng, không giặt tẩy, bám bẩn, biến dạng.</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <strong>Hướng dẫn chọn size:</strong><br>
+                    <img src="./img/size-ao.png" alt="">
+                </p>
+                <p>Bạn hãy tìm một chiếc áo đang mặc thoải mái nhất của mình, đo và so sánh với bảng phía trên để tìm ra size áo phù hợp nhất với mình nhé.</p>
+                <p>Một mẹo nhỏ dành cho những bạn có số đo ở giữa hai size thì hãy chọn size lớn hơn để mặc nha ^^.</p>
+            </div>
+            <div class="other__product">
+                <h3>Có thể bạn quan tâm</h3>
+
+                <!-- Item 1 -->
+
+                <div class="other__product--item">
+                    <a href="details.html">
+                        <div class="pro__img">
+                            <img src="./img/np4.jpg" alt="">
+                        </div>
+                        <div class="pro__info">
+                            <h3>Áo thun Disconnect</h3>
+                            <span>220,000đ</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 2 -->
+
+                <div class="other__product--item">
+                    <a href="details.html">
+                        <div class="pro__img">
+                            <img src="./img/np4.jpg" alt="">
+                        </div>
+                        <div class="pro__info">
+                            <h3>Áo thun Disconnect</h3>
+                            <span>220,000đ</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 3 -->
+
+                <div class="other__product--item">
+                    <a href="details.html">
+                        <div class="pro__img">
+                            <img src="./img/np4.jpg" alt="">
+                        </div>
+                        <div class="pro__info">
+                            <h3>Áo thun Disconnect</h3>
+                            <span>220,000đ</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 4 -->
+
+                <div class="other__product--item">
+                    <a href="details.html">
+                        <div class="pro__img">
+                            <img src="./img/np4.jpg" alt="">
+                        </div>
+                        <div class="pro__info">
+                            <h3>Áo thun Disconnect</h3>
+                            <span>220,000đ</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item 5 -->
+
+                <div class="other__product--item">
+                    <a href="details.html">
+                        <div class="pro__img">
+                            <img src="./img/np4.jpg" alt="">
+                        </div>
+                        <div class="pro__info">
+                            <h3>Áo thun Disconnect</h3>
+                            <span>220,000đ</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="similar">
+        <div class="simila__products">
+            <h3>Sản phẩm cùng loại</h3>
+            <div class="similar__flex">
+
+                <!-- Item 1 -->
+
+                <div class="similar__item">
+                    <div class="similar__img">
+                        <a href="details.html">
+                            <img src="./img/np4.jpg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar__info">
+                        <a href="details.html">
+                            <h3>Áo thun Giyu Tomioka</h3>
+                            <span class="price">250,000đ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+
+                <div class="similar__item">
+                    <div class="similar__img">
+                        <a href="details.html">
+                            <img src="./img/np1.jpg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar__info">
+                        <a href="details.html">
+                            <h3>Áo thun Giyu Tomioka</h3>
+                            <span class="price">250,000đ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+
+                <div class="similar__item">
+                    <div class="similar__img">
+                        <a href="details.html">
+                            <img src="./img/np2.jpg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar__info">
+                        <a href="details.html">
+                            <h3>Áo thun Giyu Tomioka</h3>
+                            <span class="price">250,000đ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+
+                <div class="similar__item">
+                    <div class="similar__img">
+                        <a href="details.html">
+                            <img src="./img/np3.jpg" alt="">
+                            <div class="overlay">
+                                <i class="far fa-eye"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="similar__info">
+                        <a href="details.html">
+                            <h3>Áo thun Giyu Tomioka</h3>
+                            <span class="price">250,000đ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="top__footer">
+            <h2>Đăng ký nhận tin</h2>
+            <form action="#">
+                <input type="email" placeholder="Nhập địa chỉ email">
+                <input type="submit" value="Đăng ký">
+            </form>
+        </div>
+
+        <div class="main__footer">
+            <div class="about__us">
+                <h3>Về chúng tôi</h3>
+                <p>Style Shop - Sự lựa chọn của mọi người</p>
+                <ul>
+                    <li><a href="#">Địa chỉ: 147 Nguyễn Thị Thập, Liên Chiểu, Đà Nẵng</a></li>
+                    <li><a href="#">Số điện thoại: 0123456789</a></li>
+                    <li><a href="#">Email: styleshop@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="policy">
+                <h2>Chính sách</h2>
+                <li><a>Chính sách đổi trả</a></li>
+                <li><a>Chính sách bán hàng</a></li>
+                <li><a>Chính sách bảo mật</a></li>
+                <li><a>Điều khoản dịch vụ</a></li>
+            </div>
+
+            <div class="infomation">
+                <h2>Thông tin</h2>
+                <li><a>Hướng dẫn chọn size</a></li>
+                <li><a>Hướng dẫn bảo quản</a></li>
+            </div>
+
+            <div class="social__icon">
+                <h3>Theo dõi chúng tôi</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src='js/showsubmenu.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+@import './viewall.css';
+@import '../css/style.css';
+.random__img {
+    position: absolute;
+}

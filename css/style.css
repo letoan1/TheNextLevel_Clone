@@ -1,0 +1,542 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    border-top-left-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #019abd;
+}
+
+#header {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.header__logo img {
+    width: 110px;
+    height: 110px;
+}
+
+.header__search {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.header__search input[type="search"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #eee;
+    width: 100%;
+}
+
+.header__search input[type="search"]:focus,
+.header__search input[type="search"]:active {
+    outline: none;
+}
+
+.header__info {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.header__info a {
+    text-decoration: none;
+}
+
+.user {
+    display: flex;
+    padding: 0 50px;
+    justify-content: flex-end;
+}
+
+.header__info--user {
+    display: flex;
+    align-items: center;
+}
+
+.header__info--user a {
+    color: #000;
+}
+
+.user--img {
+    padding: 7px 10px;
+    background: rgba(40, 143, 73, 0.681);
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.header__info--cart {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #019abd;
+    border-radius: 20px;
+}
+
+.header__info--cart a {
+    color: #019abd;
+}
+
+.count__items {
+    padding: 2px 5px;
+    background: #ffc107;
+    border-radius: 10px;
+}
+
+#navigation {
+    background-color: #019abd;
+    height: 50px;
+    margin-bottom: 24px;
+}
+
+#navigation>ul {
+    max-width: 1140px;
+    display: flex;
+    margin: auto;
+    gap: 0 40px;
+    align-items: center;
+}
+
+#navigation ul li {
+    list-style: none;
+}
+
+#navigation>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+}
+
+.thunder {
+    height: 24px;
+    width: 24px;
+    margin-bottom: -5px;
+}
+
+
+/* Subnav */
+
+.has-subnav {
+    position: relative;
+}
+
+#navigation ul>.has-subnav>.subnav {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    right: -100px;
+    top: 100%;
+    cursor: pointer;
+    z-index: 100;
+    padding-left: 10px;
+    background: #fff;
+    display: none;
+    transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: rgb(0 0 0 / 6%) -2px 0px 8px 0px;
+    overflow: hidden;
+}
+
+#navigation ul>.has-subnav>.subnav.open {
+    display: block;
+    transform: translateY(0);
+}
+
+#navigation ul>.has-subnav>.subnav>li>a {
+    color: #000;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+
+/* Banner */
+
+#banner,
+#brand,
+#new__product,
+#hot__banner,
+#wibu,
+#gaming,
+#banner__coll,
+#sweater {
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Brand */
+
+#brand {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.brand__img {
+    margin: 40px 0;
+}
+
+.brand__img img {
+    width: 120px;
+    height: 120px;
+}
+
+.brand__img a {
+    text-decoration: none;
+    color: #3a445e;
+    text-align: center;
+}
+
+.brand__img h3 {
+    padding-top: 15px;
+}
+
+
+/* New Product */
+
+#new__product h2,
+#wibu h2,
+#gaming h2,
+#sweater h2 {
+    color: #3a445e;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.product__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.product__item {
+    max-width: 25%;
+    padding: 0 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.product__img,
+.wibu__img,
+.gaming__img,
+.sweater__img {
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.product__item img {
+    width: 100%;
+}
+
+.product__info a,
+.wibu__info a,
+.gaming__info a,
+.sweater__info a {
+    text-decoration: none;
+    color: #3a445e;
+    text-align: center;
+}
+
+.product__info span {
+    margin-left: 30px;
+    color: #f3283d;
+    font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: antiquewhite;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .3s ease-in;
+}
+
+.product__item:hover .overlay,
+.wibu__item:hover .overlay,
+.gaming__item:hover .overlay,
+.sweater__item:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+    border-radius: 0.8rem 0.8rem 0 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.overlay i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    color: #019abd;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.view__all {
+    text-align: center;
+}
+
+.btn--view__all:hover {
+    background: #019abd;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.view__all a {
+    text-decoration: none;
+    color: #019abd;
+    margin-right: 10px;
+}
+
+.btn--view__all {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 1px solid #019abd;
+    align-items: center;
+}
+
+
+/* Hot banner */
+
+#hot__banner img {
+    margin-top: 40px;
+    width: 100%;
+}
+
+
+/* Wibu */
+
+.wibu__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.wibu__item {
+    max-width: 22%;
+    padding: 0 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.wibu__item:nth-child(4) {
+    max-width: calc(100% - 22%*3);
+}
+
+.wibu__item img {
+    width: 100%;
+    height: auto;
+}
+
+.wibu__info span {
+    margin-left: 25px;
+    color: #f3283d;
+    font-weight: bold;
+}
+
+
+/* Gaming */
+
+#gaming h2 {
+    color: #3a445e;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.gaming__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.gaming__item {
+    max-width: 20%;
+    padding: 0 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gaming__item:nth-child(1) {
+    max-width: calc(100% - 20%*3);
+}
+
+.gaming__item img {
+    width: 100%;
+    height: auto;
+}
+
+.gaming__info span {
+    margin-left: 15px;
+    color: #f3283d;
+    font-weight: bold;
+}
+
+
+/* Banner coll */
+
+#banner__coll {
+    margin-top: 100px;
+}
+
+.banner__coll--flex {
+    display: flex;
+    gap: 0 20px;
+}
+
+#banner__coll img {
+    width: 100%;
+}
+
+
+/* Sweater */
+
+.sweater__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.sweater__item {
+    max-width: 20%;
+    padding: 0 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sweater__item img {
+    width: 100%;
+    height: auto;
+}
+
+.sweater__info span {
+    margin-left: 15px;
+    color: #f3283d;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+.top__footer {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 20px 0;
+}
+
+.top__footer h2 {
+    color: #3a445e;
+    margin: 20px 0;
+}
+
+input[type="email"] {
+    width: 500px;
+    padding: 10px;
+    border: none;
+}
+
+input[type="email"]:focus,
+input[type="email"]:active {
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background: #ffc107;
+    border: none;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.main__footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: #019abd;
+    padding: 40px 0 10px 0;
+}
+
+.about__us ul li a,
+.about__us h3,
+.about__us p,
+.policy h2,
+.infomation h2,
+.social__icon h3,
+.social__icon ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 17px;
+}
+
+.main__footer ul li,
+.policy li,
+.infomation li {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 17px;
+}
+
+.social__icon ul {
+    display: flex;
+    justify-content: space-around;
+}
